@@ -5,18 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PCSX2 0.9.8\n"
+"Project-Id-Version: PCSX2 1.4.0\n"
 "Report-Msgid-Bugs-To: https://github.com/PCSX2/pcsx2/issues\n"
 "POT-Creation-Date: 2015-12-22 16:57+0100\n"
-"PO-Revision-Date: 2011-04-17 17:56+0100\n"
+"PO-Revision-Date: 2016-01-13 12:39+0100\n"
 "Last-Translator: Delirious <delirious@freemail.hu>\n"
 "Language-Team: Delirious <delirious@freemail.hu>\n"
-"Language: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Hungarian\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: common/src/Utilities/Exceptions.cpp:275
 msgid ""
@@ -37,7 +37,6 @@ msgstr ""
 "PCSX."
 
 #: pcsx2/System.cpp:129
-#, fuzzy
 msgid ""
 "This recompiler was unable to reserve contiguous memory required for "
 "internal caches.  This error can be caused by low virtual memory resources, "
@@ -47,9 +46,7 @@ msgstr ""
 "Ez a recompiler nem tudott folyamatos memóriát lefoglalni, ami szükséges a "
 "belső gyorsítótár számára.  Ilyen hibát okozhat a nem elegendő virtuális "
 "memória erőforrás, mint például a kis méretű vagy kikapcsolt lapozófájl, "
-"vagy más, nagy mennyiségű memóriát fogyasztó program.  Megpróbálhatod "
-"csökkenteni az alapértelmezett gyorsítótár méretét is minden PCSX2 "
-"recomplier számára a Gazdagép beállításai alatt."
+"vagy más, nagy mennyiségű memóriát fogyasztó program."
 
 #: pcsx2/System.cpp:374
 msgid ""
@@ -119,6 +116,8 @@ msgid ""
 "Please note that the resulting file may not actually contain all saves, "
 "depending on how many are in the source memory card."
 msgstr ""
+"Az így készült fájl nem biztos, hogy minden mentést tartalmazni fog, attól "
+"függően, hogy hány mentés van az eredeti memóriakártyán."
 
 #: pcsx2/gui/Dialogs/ConvertMemoryCardDialog.cpp:68
 msgid ""
@@ -126,22 +125,25 @@ msgid ""
 "emulator during the conversion process, even if the emulator is no longer "
 "responding to input."
 msgstr ""
+"FIGYELEM: Egy memóriakártya konvertálása eltarthat egy darabig. A "
+"konvertálás ideje alatt ne zárd be az emulátort, még akkor se, ha az nem "
+"válaszol."
 
 #: pcsx2/gui/Dialogs/ConvertMemoryCardDialog.cpp:87
 msgid "Convert this memory card to a standard 8 MB Memory Card .ps2 file."
-msgstr ""
+msgstr "Memóriakártya konvertálása szabvány 8 MB-os .ps2 fájlá."
 
 #: pcsx2/gui/Dialogs/ConvertMemoryCardDialog.cpp:89
 msgid "Convert this memory card to a 16 MB Memory Card .ps2 file."
-msgstr ""
+msgstr "Memóriakártya konvertálása 16 MB-os .ps2 fájlá."
 
 #: pcsx2/gui/Dialogs/ConvertMemoryCardDialog.cpp:91
 msgid "Convert this memory card to a 32 MB Memory Card .ps2 file."
-msgstr ""
+msgstr "Memóriakártya konvertálása 32 MB-os .ps2 fájlá."
 
 #: pcsx2/gui/Dialogs/ConvertMemoryCardDialog.cpp:93
 msgid "Convert this memory card to a 64 MB Memory Card .ps2 file."
-msgstr ""
+msgstr "Memóriakártya konvertálása 64 MB-os .ps2 fájlá."
 
 #: pcsx2/gui/Dialogs/CreateMemoryCardDialog.cpp:197
 msgid ""
@@ -231,6 +233,9 @@ msgid ""
 "software changes. This prevents the memory card from running out of space "
 "for saves."
 msgstr ""
+"(Csak mappa típus esetén) Memóriakártya tartalmának újraindexelése, amikor a "
+"futó szoftver megváltozik. Ez megelőzi azt, hogy a memóriakártya kifogyjon "
+"szabad helyből."
 
 #: pcsx2/gui/Dialogs/StuckThreadDialog.cpp:33
 #, c-format
@@ -346,7 +351,7 @@ msgstr ""
 #: pcsx2/gui/MemoryCardFolder.h:527
 #, c-format
 msgid "(FolderMcd) Memory Card is full, could not add: %s"
-msgstr ""
+msgstr "(MappaMemKártya) A memóriakártya megtelt. %s hozzáadása sikertelen."
 
 #: pcsx2/gui/Panels/BiosSelectorPanel.cpp:138
 msgid ""
@@ -380,7 +385,6 @@ msgstr ""
 "felhasználói mód beállítás társítását."
 
 #: pcsx2/gui/Panels/GSWindowPanel.cpp:54
-#, fuzzy
 msgid ""
 "Zoom = 100: Fit the entire image to the window without any cropping.\n"
 "Above/Below 100: Zoom In/Out\n"
@@ -392,9 +396,16 @@ msgid ""
 "Keyboard: CTRL + NUMPAD-PLUS: Zoom-In, CTRL + NUMPAD-MINUS: Zoom-Out, CTRL + "
 "NUMPAD-*: Toggle 100/0"
 msgstr ""
-"A függőleges szinkron (Vsync) csökkenti a kép töredezettséget, de nagy "
-"hatással van a teljesítményre is. Általában csak teljes képernyős módban "
-"használatos és nem minden GS plugin esetén működik."
+"Nagyítás = 100: Teljes kép illesztése az ablak méretéhez a szélek levágása "
+"nélkül.\n"
+"100 alatt/fölött: kicsinyítés/nagyítás\n"
+"0: Automatikus nagyítás addig a méretig, amíg a fekete sávok el nem tűnnek. "
+"(Megtartja a képarányt, de a kép egy része a képernyőn kívülre eshet).\n"
+"  Megjegyzés: Egyes játékok szándékosan jelenítenek meg fekete sávokat, "
+"amelyet ez a beállítás nem tűntet el.\n"
+"\n"
+"Billentyűparancsok: Ctrl+Numpad+: Nagyítás, Ctrl+Numpad-: Kicsinyítés, Ctrl"
+"+Numpad*: Váltás 100 és 0 között"
 
 #: pcsx2/gui/Panels/GSWindowPanel.cpp:57
 msgid ""
@@ -468,34 +479,29 @@ msgstr ""
 " * Mana Khemia 1 (\"off campus\" esetén)\n"
 
 #: pcsx2/gui/Panels/GameFixesPanel.cpp:88
-#, fuzzy
 msgid ""
 "Known to affect following games:\n"
 " * Test Drive Unlimited\n"
 " * Transformers"
 msgstr ""
 "A következő játékokra ismert a hatása:\n"
-" * Bleach Blade Battler\n"
-" * Growlanser II és III\n"
-" * Wizardry"
+" * Test Drive Unlimited\n"
+" * Transformers"
 
 #: pcsx2/gui/Panels/GameFixesPanel.cpp:116
-#, fuzzy
 msgid ""
 "It's better to enable 'Automatic game fixes' at the main menu instead, and "
 "leave this page empty. ('Automatic' means: selectively use specific tested "
 "fixes for specific games). Manual game fixes will NOT increase your "
 "performance. In fact they may decrease it."
 msgstr ""
-"A játék javítások megoldások lehetnek a hibás emulációra néhány játék "
-"esetében. \n"
-"Egyben kompatibilitási és teljesítmény problémákat is okozhatnak, ezért nem "
-"ajánlottak. \n"
-"A játék javítások alapból be vannak kapcsolva, ezért nem kell semmit sem "
-"beállítanod itt."
+"Javasolt inkább engedélyezni az 'Automatikus játék javítások' beállítást a "
+"főmenüben és ezt az oldalt üresen hagyni. (Az 'Automatikus' azt jelenti, "
+"hogy egyes játékokhoz automatikusan alkalmazza a szükséges és kipróbált "
+"javításokat). A kézi javítások használata NEM fogja növelni a teljesítményt, "
+"sőt, sok esetben még rontja is azt."
 
 #: pcsx2/gui/Panels/GameFixesPanel.cpp:120
-#, fuzzy
 msgid ""
 "Gamefixes can work around wrong emulation in some titles. \n"
 "They may also cause compatibility or performance issues.\n"
@@ -506,8 +512,8 @@ msgstr ""
 "esetében. \n"
 "Egyben kompatibilitási és teljesítmény problémákat is okozhatnak, ezért nem "
 "ajánlottak. \n"
-"A játék javítások alapból be vannak kapcsolva, ezért nem kell semmit sem "
-"beállítanod itt."
+"\n"
+"Az a legbiztonságosabb, ha mind ki van kapcsolva."
 
 #: pcsx2/gui/Panels/MemoryCardListPanel.cpp:686
 #, c-format
@@ -530,7 +536,6 @@ msgid "Failed: Destination memory card '%s' is in use."
 msgstr "Hiba: A(z) '%s' nevű memória kártya használatban van."
 
 #: pcsx2/gui/Panels/MiscPanelStuff.cpp:35
-#, fuzzy
 msgid ""
 "Please select your preferred default location for PCSX2 user-level documents "
 "below (includes memory cards, screenshots, settings, and savestates).  These "
@@ -612,37 +617,36 @@ msgstr ""
 "bezárásához."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:29
-#, fuzzy
 msgid ""
 "-2 - Reduces the EE's cyclerate by about 50%.  Moderate speedup, but *will* "
 "cause stuttering audio on many FMVs."
 msgstr ""
-"3 - Megközelítőleg 50 %-kal csökkenti az EE ciklusszámát.  Mérsékelt "
-"sebesség növekedés, de recsegő hangot *okoz* számos FMV esetén."
+"-2 - Csökkenti az EE ciklusszámát kb. 50%-kal. Mérsékelt gyorsulás, de "
+"akadozó hangokat eredményez a legtöbb FMV lejátszása közben."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:34
-#, fuzzy
 msgid ""
 "-1 - Reduces the EE's cyclerate by about 33%.  Mild speedup for most games "
 "with high compatibility."
 msgstr ""
-"2 - 33 %-kal csökkenti az EE ciklusszámát.  Enyhe sebesség növekedés a "
-"legtöbb játéknál magas kompatibilitással."
+"-1 - Csökkenti az EE ciklusszámát kb. 33%-kal. Enyhe gyorsulás a legtöbb "
+"játékban, magas kompatibilitás."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:39
-#, fuzzy
 msgid ""
 "0 - Default cyclerate. This closely matches the actual speed of a real PS2 "
 "EmotionEngine."
 msgstr ""
-"1 - Alapértelmezett ciklusszám. Ez megközelítőleg hasonlít a valódi PS2 "
-"EmotionEngine tényleges sebességéhez."
+"0 - Alapértelmezett ciklusszám. Ez áll a legközelebb a valódi PS2 "
+"EmotionEngine sebességéhez."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:44
 msgid ""
 "1 - Increases the EE's cyclerate by about 33%. Increases hardware "
 "requirements, may increase in-game FPS."
 msgstr ""
+"1 - Növeli az EE ciklusszámát kb. 33%-kal. Megnöveli a gépigényt, de kissé "
+"növelheti a játék közbeni FPS-t."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:49
 msgid ""
@@ -650,18 +654,20 @@ msgid ""
 "requirements, may noticeably increase in-game FPS.\n"
 "This setting can cause games to FAIL TO BOOT."
 msgstr ""
+"2 - Növeli az EE ciklusszámát kb. 50%-kal. Nagyban megnöveli a gépigényt, de "
+"érezhetően növelheti a játék közbeni FPS-t\n"
+"Egyes játékok NEM BOOTOLNAK ezzel a beállítással."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:65
 msgid "0 - Disables VU Cycle Stealing.  Most compatible setting!"
-msgstr ""
-"0 - Kikapcsolja a VU ciklus csökkentést.  Leginkább kompatibilis beállítás!"
+msgstr "0 - Kikapcsolja a VU ciklus lopást.  Leginkább kompatibilis beállítás!"
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:70
 msgid ""
 "1 - Mild VU Cycle Stealing.  Lower compatibility, but some speedup for most "
 "games."
 msgstr ""
-"1 - Enyhe VU ciklus csökkentés.  Alacsonyabb kompatibilitás, de bizonyos "
+"1 - Enyhe VU ciklus lopás.  Alacsonyabb kompatibilitás, de bizonyos "
 "sebességnövekedés a legtöbb játéknál."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:75
@@ -669,15 +675,15 @@ msgid ""
 "2 - Moderate VU Cycle Stealing.  Even lower compatibility, but significant "
 "speedups in some games."
 msgstr ""
-"2 - Mérsékelt VU ciklus csökkentés.  Még alacsonyabb kompatibilitás, de "
-"jelentős sebességnövekedés néhány játéknál."
+"2 - Mérsékelt VU ciklus lopás.  Még alacsonyabb kompatibilitás, de jelentős "
+"sebességnövekedés néhány játéknál."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:81
 msgid ""
 "3 - Maximum VU Cycle Stealing.  Usefulness is limited, as this will cause "
 "flickering visuals or slowdown in most games."
 msgstr ""
-"3 - Maximális VU ciklus csökkentés.  Használhatósága korlátozott, mivel "
+"3 - Maximális VU ciklus lopás.  Használhatósága korlátozott, mivel "
 "képvillogást és lassulást okoz a legtöbb játéknál."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:106
@@ -691,7 +697,6 @@ msgstr ""
 "Emulációs problémák esetén először ezt a panelt kapcsold ki."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:135
-#, fuzzy
 msgid ""
 "Setting lower values on this slider effectively reduces the clock speed of "
 "the EmotionEngine's R5900 core cpu, and typically brings big speedups to "
@@ -700,10 +705,12 @@ msgid ""
 "bring about an increase in in-game FPS while also making games more "
 "demanding and possibly causing glitches."
 msgstr ""
-"Magasabb érték állítása a csúszkán hatásosan csökkenti az EmotionEngine's "
-"R5900 központi processzor órajelét és tipikusan nagy sebesség növekedést "
-"okoz azoknál a játékoknál, amelyek nem képesek kihasználni a valódi PS2 "
-"hardver tényleges képességeit."
+"A csúszka alacsonyabb értékei csökkentik az EmotionEngine R5900 processzor "
+"magjának órajelét, ezáltal sebességnövekedést eredményezhet olyan "
+"játékojnál, melyek nem használják ki teljes mértékben a valódi PS2 hardver "
+"elérhető teljesítményét. Fordított esetben, magasabb értékek esetén növeli "
+"az órajelet, aminek eredményeképp gyorsulhatnak a játékok, de emellett "
+"nagyobb lesz a gépigényük is, és egyéb hibák is előfordulhatnak."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:152
 msgid ""
@@ -726,13 +733,16 @@ msgstr ""
 "alapértelmezettként."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:172
-#, fuzzy
 msgid ""
 "Runs VU1 on its own thread (microVU1-only). Generally a speedup on CPUs with "
 "3 or more cores. This is safe for most games, but a few games are "
 "incompatible and may hang. In the case of GS limited games, it may be a "
 "slowdown (especially on dual core CPUs)."
-msgstr "Nem működik a Gran Turismo 4 vagy Tekken 5 esetén."
+msgstr ""
+"Önálló szálon futtatja a VU1 egységet (microVU1 esetén). Általános gyorsulás "
+"3 vagy töb magos processzorok esetében. Ez a legtöbb játék számára "
+"biztonságos, de néhány játék nem kompatibilis és lefagyhat. GS korlátozott "
+"játékok esetében lassulást okozhat (főleg 2 magos processzoroknál)."
 
 #: pcsx2/gui/Panels/SpeedhacksPanel.cpp:190
 msgid ""
@@ -830,10 +840,10 @@ msgid ""
 "not a critical error, since the sVU rec is obsolete, and you should use "
 "microVU instead anyway. :)"
 msgstr ""
-"Kevés a memória (valahogyan): A SuperVu recompiler nem volt képes lefoglalni "
-"egy megadott mennyiségű szükséges memóriát, ezért nem lesz képes használni "
-"azt. Ez nem kritikus hiba, amióta az sVU rec elavult és bármikor használható "
-"helyette a microVU. :)"
+"Kevés a memória (vagy ilyesmi): A SuperVU recompiler nem volt képes "
+"lefoglalni egy megadott mennyiségű szükséges memóriát, ezért nem lesz képes "
+"használni azt. Ez nem kritikus hiba, mivel az sVU rec elavult és egyébként "
+"is a microVU használandó helyette. :)"
 
 #~ msgid ""
 #~ "Warning: Your computer does not support SSE2, which is required by many "
